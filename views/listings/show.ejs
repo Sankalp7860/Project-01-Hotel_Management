@@ -78,8 +78,8 @@
               <div class="row">
                   <p><b>All Reviews</b></p>
                   <% for(review of listing.reviews){ %>
-                  <div class="row">
-                      <div class="card col-12 mb-3">
+                  <div class="col-md-6">
+                      <div class="card mb-3">
                           <div class="card-body">
                               <h5 class="card-title">@ <i><%=review.createdBy && review.createdBy.username ? review.createdBy.username : 'Unknown User'%></i></h5>
                               <p class="starability-result card-text" data-rating="<%=review.rating%>"></p>
